@@ -1,6 +1,9 @@
-void main(List<String> args) {
-
-    print('%d You Passed', args)
-
-    print('%d Uncaught Error: Assertion failed: "The score must be bigger or equal to 80', args)
+void main(List<String> args){
+  int num = int.parse(args[0]);
+  if(num <0)
+  print('${num}is negativ');
+  else if (num >0 )
+  print('${num}is positive');
+  else 
+  print('${num}is zero');
 }
